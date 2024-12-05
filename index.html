@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Pan.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="Sushi Gallery Design LOGO.png" type="image/x-icon">
+    <title>Sushi Gallery Site</title>
+
+    <style>
+        .topnav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row; 
+    gap: 10px; 
+}
+
+        .link-as-image {
+            width: 50px; 
+            height: 50px; 
+            position: relative;
+            margin-left: 10px;
+        }
+
+        .link-as-image img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+        }
+
+        .link-as-image .hover-text {
+            visibility: hidden;
+            width: 120px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .link-as-image:hover .hover-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .box {
+            position: relative;
+            text-align: center;
+        }
+
+        .box img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+        }
+
+        .box .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            color: rgb(24, 8, 21);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="Sushi Gallery Design LOGO.png" width="150" height="150" alt="Sushi Gallery Logo">
+  
+    <div class="topnav">
+        <a href="Main Gallery.html" class="link-as-image">
+            <img src="Website Hyperlink Menu Icon - Set as Content Page Link.png" alt="Gallery Viewer">
+            <div class="hover-text">Main Gallery</div>
+        </a>
+        <a href="Profile Login.html" class="link-as-image">
+            <img src="Website Hyperlink Menu Icon - Set as Login Page.png" alt="Login Page">
+            <div class="hover-text">Profile Login</div>
+        </a>
+        <a href="Contact Help.html" class="link-as-image">
+            <img src="Website Hyperlink Menu Icon - Set as Contact Help Page.png" alt="Contact Us"  margin-left="-10px" >
+            <div class="hover-text">Contact</div>
+        </a>
+    </div>
+
+    <div class="box">
+        <img src="Intro Image.jpg" height="420" width="420" alt="Intro Image">
+        <div class="centered-text">
+            Welcome to my Sushi Gallery Website! 
+            <br>
+            <br>
+            Here you can view and find information about
+           different types of Japanese dishes related to sushi such as Futomaki and Sake Hand Roll!
+        </div>
+    </div>
+</body>
+</html>
